@@ -10,11 +10,11 @@ const serviceRoute=require("./router/service-router")
 const adminRoute=require("./router/admin-router");
 const connectDb=require("./utils/db");
 const errorMiddleware = require("./middleware/error-middleware");
-const BASE_URL=process.env.BASE_URL;
+
 
 //let's tackle cors
 const corsOptions={
-    origin:`${BASE_URL}`,
+    origin:`http://localhost:5173`,
     methods:"GET,POST,PUT,DELETE,PATCH,HEAD",
     credentials:true,
 }
