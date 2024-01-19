@@ -39,7 +39,7 @@ app.use("/api/form",contactRoute);
 app.use("/api/data",serviceRoute);
 
 //let's define admin route
-app.use("/api/admin",cors(corsOptions),adminRoute);
+app.use("/api/admin",adminRoute);
 
 app.use(errorMiddleware);
 
