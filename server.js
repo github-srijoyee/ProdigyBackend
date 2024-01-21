@@ -14,9 +14,9 @@ const errorMiddleware = require("./middleware/error-middleware");
 
 //let's tackle cors
 const corsOptions={
-    origin:`https://prodigy-institute.netlify.app`,           //write http://localhost:5173 for running in localhost
+    origin:['http://localhost:5173', 'https://prodigy-institute.netlify.app'],           //write http://localhost:5173 for running in localhost
     methods:"GET,POST,PUT,DELETE,PATCH,HEAD",
-    credentials:true,                                  //https://prodigy-official.netlify.app
+    credentials:true,                                  //https://prodigy-institute.netlify.app
 }
 app.use(cors(corsOptions));
 
